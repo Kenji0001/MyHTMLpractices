@@ -1,0 +1,42 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Vollkorn', serif;
+  background: url(DarkForest.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #f24343;
+}
+
+.buffer {
+	height: 6rem;
+}
+
+h2, h3 {
+	margin: 12px;
+	color: white;
+}
+
+h3{
+	font-size: 20px;
+}
+
+.btn {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.btn-xl {
+	padding: 0.5rem;
+}
+
+.btn-primary:hover {
+	border-width: 4px;
+}

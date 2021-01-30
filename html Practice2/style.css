@@ -1,0 +1,55 @@
+/*Selector {
+	Property: value;
+}*/
+* {
+	text-align: right;
+}
+body {
+	background-image: url(images/neon.jpg);
+	background-size: cover;
+}
+
+p{
+	color: #D3E0E6;
+	text-align: center;
+	border: 16px solid #162955;
+}
+
+p {
+	color: black;
+	text-transform: capitalize;
+	line-height: 48px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Texturina', serif;
+}
+
+img {
+	float: left;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.text{
+	border: 6px dotted green;
+}
+.new{
+	border: 6px dashed yellow;
+}
+
+#div1{
+	background-color: brown;
+}
+
+#div2{
+	background-color: indigo;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html> <!-- 
+ ^^^^^ !DOCTYPE html means communicating to computer language (browser) that html will be used -->
+<html>
+
+	<head>
+		<title> HTML Cheat Sheet </title>
+	</head>
+
+	<body>
+		<!-- This is a comment tag (Use ! and --)
+				
+			 Headings -->
+		<h1> Heading One </h1>
+		<h2> Heading Two </h2>
+		<h3> Heading Three </h3>
+		<h4> Heading Four </h4>
+		<h5> Heading Five </h5>
+		<h6> Heading Six </h6>
+		<!-- Headings up to six -->
+		<h7> Heading Seven </h7>
+		<h8> Heading Eight </h8>
+		<p> Headings only go up to 6
+			<br>
+		<b>Note</b>*Do not use headings to bold or make large text* </p>
+
+		<br>
+
+		<!-- "Click to go to tip section portion" Give id and link with "#" **Same variable needed -->
+		<p id="tips">----------Useful Tips Section HERE!----------</p>
+
+		<!-- Paragraphs -->
+		<p>
+			<!-- Nowadays <b></b>, <i></i>, and some others are not used because some mobiles/screen readers do not have the capabilities to read those tags -->
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor <!-- bold --> <b> incididunt ut labore et dolore magna aliqua. </b> Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. <!-- italizied --> <i> Duis aute irure dolor in reprehenderit in voluptate </i> velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, <!-- bold+italizied --> <strong> <em> sunt in culpa qui officia </em></strong> deserunt mollit anim id est laborum.
+			<!-- And now, <strong></strong> is used for bold and <em></em> is used for italics -->
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, <!-- Link --> <a href="https://google.com"> consectetur adipisicing elit </a> (<-- open in same tab), sed do eiusmod
+			tempor <!-- Link+new tab --> <a href="https://google.com" target="_blank"> incididunt ut labore </a> (<-- open in new tab) et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- Lists
+			Unorder List -->
+		<ul>
+			<li> List Item 1 </li>
+			<li> List Item 2 </li>
+				<!-- nested list -->
+				<ul>
+					<li>Sub List 2 Item 1</li>
+				</ul>
+			<li> List Item 3 </li>
+			<li> List Item 4 </li>
+		</ul>
+		<!-- Ordered List -->
+		<ol>
+			<li> List Item 1 </li>
+			<li> List Item 2 </li>
+			<!-- <hr> tag adds horizontal line break -->
+			<hr>
+			<li> List Item 3 </li>
+			<li> List Item 4 </li>
+		</ol>
+
+		<!-- Tables 
+			***Only use table for data, not layout*** -->
+		<table>
+			<!-- t = table 
+				ex: "t"head (thead) = table header -->
+			<thead>
+				<!-- tr = table row -->
+				<tr>
+					<th> Name </th>
+					<th> Email </th>
+					<th> Age </th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- one tr group = one line of data on table -->
+				<tr>
+					<!-- td = table data -->
+					<td> Name1 </td>
+					<td> 123@gmail.com </td>
+					<td> 35 </td>
+				</tr>
+				<tr>
+					<td> Name2 </td>
+					<td> 456@gmail.com </td>
+					<td> 72 </td>
+				</tr>
+				<tr>
+					<td> Name3 </td>
+					<td> 789@gmail.com </td>
+					<td> 54 </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- br Line Break -->
+		<br>
+		<!-- hr Add Line -->
+		<hr>
+
+		<a href="myForm.html" target="_blank"> Click to go to my form </a>
+
+		<br>
+
+		<!-- EX img, br, or hr tags are self closing meaning no </img> or </br> at end
+
+			Images
+			(attribute/special proporties)  
+			src = source
+			alt = if cannot find image, display text (in this case, it says image missing)
+			width
+			height -->
+		<img src="images/sample.jpg" alt="Image Missing" width="200">
+		<!-- Clickabke Image linking -- use a href tag -->
+		<a href="images/sample.jpg" target="_blank">
+			<img src="images/sample.jpg" alt="Image Missing" width="200" height="100">
+		</a>
+		<!-- src can link to any pictures using URL too -->
+		<img src="https://images-na.ssl-images-amazon.com/images/I/51zLZbEVSTL._AC_SX466_.jpg" alt="Image Missing" width="200" height="200">
+
+		<!-- Quotations 
+			blockquote, citation is within source code, hidden, press f12-->
+		<blockquote cite="https://google.com"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+
+		<!-- abbr = "underlined", use in defining abbriviation, put mouse over to see hidden -->
+		<p> The <abbr title="World Wide Web"> WWW </abbr> is cool</p>
+
+		<p> <cite> HTML Practice Sheet </cite> is helpful</p>
+
+		<!-- mailto = clickable link/mailto = open mail editor to mail to adress
+			tel = clickable link/call number -->
+		<a href="mailto:webmaster@example.com">This is an email link</a>
+		<br>
+		<a href="tel:555-555-5555">This is a phone number link</a>
+
+		<br>
+		<!-- Link jumps to tip section above calling with # -->
+		<a href="#tips">Jump to Useful Tips Section</a>
+
+		<p> Click to go to my <a href=Blog.html target="_blank">blog</a> </p>
+
+		
+
+
+
+		<div style="margin-top:500px"></div>
+	</body>
+
+</html>

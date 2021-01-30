@@ -1,0 +1,27 @@
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class (Use when defining class in html e.g <p class="test"></p> --> in CSS call by "." e.g .test { CSS code })
+#id (Use when defining id in html e.g <p id="test"></p> --> in CSS call by "#" e.g #test { CSS code })
+* (Use when defining all parts)
+element (Use when defining just one part)
+element1, element2,... (Use when defining both or more parts to have same look)
+element1 element2 (Use when defining all part2(element2) that is inside part1(element1) regarless of parent of part2(element2))
+element1 > element (Use when defining all part2(element2) that is only parent to part1(element1))
+element1 + element2 (Use when defining any part2(element2) that is exactly after any part1(element1))
+:hover (hover effect)
+:last-child (Use when defining last part of group)
+:first-child (Use when defining first part of group)
+!important (not recommended)
+
+
+What seletors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order

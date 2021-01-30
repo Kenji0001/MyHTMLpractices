@@ -1,0 +1,33 @@
+/*Selector {
+	Property: value;
+}*/
+
+h2 {
+	color: orange;
+	background-color: blue;
+	font-size: 100px;
+}
+
+p {
+	color: blue;
+	font-size: 20px;
+}
+
+span {
+	/*#em is #x the size px of p*/
+	/*#rem is #x the size of root element/document*/
+	font-size: 2rem;
+}
+
+.box {
+	border: 10px solid green;
+}
+.box2 {
+	/*Box model - Inspect element*/
+	border: 6px solid orange;
+	display: inline-block;
+	padding: -50px -30px;
+	margin: 10px 40px;
+	width: 20px;
+	height: 40px;
+}

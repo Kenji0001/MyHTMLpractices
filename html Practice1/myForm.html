@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Form</title>
+</head>
+<body>
+<!-- Forms 
+		***Needs php/javascript or other dynamic programming to function***
+		HTML only for looks
+		
+		POST = add data to database - secure data - hidden
+		GET = add data - shows in URL - not secure - not-hidden -->
+		<form method="POST">
+			<!-- Label is helpful for screen readers and adding "for" attribute helps for user having trouble clicking (e.g trouble clicking textbox area) -->
+			<label> First Name </label>
+							<!-- name = for server-side programming/input value variable -->
+			<input type="text" name="firstName">
+
+			<label> Last Name </label>
+			<input type="text" name="lastName">
+
+			<label> Email </label>
+			<!-- type email gives email vaildation over text incase input is not vaild email format -->
+			<input type="email" name="email">
+
+			<hr>
+
+			<!-- div = block level element/nextline -- neat compared to inline text-->
+			<div>
+				<label> First Name </label>
+				<!-- type text for text box input
+					value = input value
+					placeholder = temporary input value ***Use placeholder over value to shorten hassle of earasing vaule everytime***
+						ex: instructions -->
+				<input type="text" name="firstName" placeholder="Enter First Name">
+			<br>
+				<label> Last Name </label>
+				<input type="text" name="lastName" placeholder="Enter Last Name">
+			<br>
+				<label> Password </label>
+				<input type="Password" name="Password" placeholder="Enter a Password" min="3">
+				<!-- min = minimal character amount in passowrd -->
+			</div>
+			<br>
+			<div>
+				<label for="email"> Email </label>
+				<input id="email" type="email" name="email" placeholder="Enter Email" required>
+				<!-- require makes form section mandatory to fill out -->
+			</div>
+			<br>
+			<div>
+				<label> Message </label>
+				<!-- bigger text space -->
+				<textarea name="message" placeholder="Enter Your Message"></textarea>
+			</div>
+			<br>
+			<div>
+				<label> What car do you have? </label>
+				<!-- select list drop menu -->
+				<select name="car">
+					<option value="toyota"> Toyota </option>
+					<option value="tesla"> Tesla </option>
+					<option value="audi"> Audi </option>
+					<option value="bmw"> BMW </option>
+					<option value="hyundai"> Hyundai </option>
+					<option value="chevy"> Chevy </option>
+				</select>
+			</div>
+			<div>
+				<label> Gender </label>
+				<!-- type radio buttons 
+					name needs to be equal for only one to be selected -->
+				<input type="radio" name="Gender" value="male">Male
+				<input type="radio" name="Gender" value="female">Female
+				<!-- adding value lets computer know which option is selected based on gender -->
+			</div>
+			<br>
+			<div>
+				<label> Which is your favorite pet? </label>
+				<!-- type checkbox for checkbox -->
+				<input type="checkbox" name="cat">Cat
+				<input type="checkbox" name="dog">Dog
+			</div>
+			<br>
+			<div>
+				<label> Age: </label>
+				<!-- type number for numbers only -->
+				<input type="number" name="age">
+			</div>
+			<br>
+			<div>
+				<label> Birthday: </label>
+				<!-- type date for date only -->
+				<input type="date" name="birthday">
+			</div>
+			<br>
+			<div>
+				<!-- button type -->
+				<input type="submit" name="submit" value="Submit Info">
+				<input type="Reset" value="Reset Info">
+			</div>
+			<br>
+			<div>
+				<label> Slider </label>
+				<br>
+				Yes
+				<!-- type range for silder -->
+				<input type="range">
+				No
+			</div>
+		</form>
+
+		<br>
+
+		<!-- Buttons outside of forms 
+		***Need javascript to function*** click = variable -->
+		<button click="someFunction"> Click Me - I do nothing </button>
+</body>
+</html>
